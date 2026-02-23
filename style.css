@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 42%);
+  --dark-gray: hsl(0, 0%, 7%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--dark-gray);
+}
+
+.card {
+  max-width: 380px;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 10px 10px 0px black;
+  border: 1px solid black;
+}
+
+.container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container .tag {
+  background-color: var(--yellow);
+  display: inline-block;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.container h2 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.container h2:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.container .description {
+  color: var(--light-gray);
+  margin-bottom: 20px;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.author img {
+  width: 32px;
+  margin-right: 10px;
+}
+
+.author p {
+  font-weight: 800;
+}
+
+footer {
+  margin-top: 20px;
+}
